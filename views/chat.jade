@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		title Welcome
+		link(href='/stylesheets/styles.css', rel='stylesheet')
+		script(type="text/babel", src="/javascripts/chat-component.js")
+		script(src="/libraries/socketio.js")
+		script(src="/libraries/react.min.js")
+		script(src="/libraries/react-dom.min.js")
+		script(src="/libraries/browser.min.js")
+	body
+		#exitLink
+			a(href="/logout") EXIT
+		#preloader_chat
+			.spinWrap_chat
+				.spinnerImage_chat
+				.loader_chat
+		#chat			

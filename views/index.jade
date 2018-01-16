@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+	head
+		title Welcome
+		link(href='/stylesheets/styles.css', rel='stylesheet')
+		script(src="/javascripts/main.js")
+		script(type="text/babel", src="/javascripts/login.js")
+		script(type="text/babel", src="/javascripts/donate.js")
+		script(src="/libraries/react.min.js")
+		script(src="/libraries/react-dom.min.js")
+		script(src="/libraries/browser.min.js")
+		script(src="/libraries/ajax.js")
+	body
+		#preloader
+			.spinWrap
+				.spinnerImage
+				.loader
+		#start__container
+			#logo
+				p LOGO
+			#greeting
+				h2.greeting__caption
+					span
+				p.greeting__text.text_1
+					span
+				p.greeting__text.text_2
+					span
+				p.greeting__text.text_3
+					span
+				p.greeting__text.text_4
+					span
+			#buttons.animated
+				.button.donate__button
+					p.button__text Register
+				.button.login__button
+					p.button__text Login
+		#back__button.button
+			p.button__text Back
+		#login__form.form
+		#donate__form.form
+
+
+
+
+//form(action='/mailValid' method="post")

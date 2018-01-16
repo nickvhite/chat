@@ -1,0 +1,10 @@
+doctype html
+html(lang='en')
+	head
+		title Welcome
+		link(href='/stylesheets/styles.css', rel='stylesheet')
+		script(src="/javascripts/main.js")
+	body
+		h1= message
+		h2= error.status
+		pre #{error.stack}
